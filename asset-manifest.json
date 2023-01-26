@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/yandex-map-api/static/css/main.de1a0d3f.css",
+    "main.js": "/yandex-map-api/static/js/main.99a598f0.js",
+    "static/media/retry.png": "/yandex-map-api/static/media/retry.e185e9668955a1b1ae8c.png",
+    "static/media/placemark.png": "/yandex-map-api/static/media/placemark.46ad9176142e7bff77c7.png",
+    "static/media/garbage.svg": "/yandex-map-api/static/media/garbage.020dee103726d4c645b8f59cb4d4eebd.svg",
+    "index.html": "/yandex-map-api/index.html",
+    "static/media/add.svg": "/yandex-map-api/static/media/add.74a6d81682aed99524fdc7a592943b68.svg",
+    "main.de1a0d3f.css.map": "/yandex-map-api/static/css/main.de1a0d3f.css.map",
+    "main.99a598f0.js.map": "/yandex-map-api/static/js/main.99a598f0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.de1a0d3f.css",
+    "static/js/main.99a598f0.js"
+  ]
+}
