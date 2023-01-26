@@ -1,0 +1,156 @@
+.inputField {
+  width: 100%;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 24px;
+  padding: 0 40px 0 10px;
+}
+.addButtonBlock {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  right: 2px;
+  top: 2px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background-color: none;
+  overflow: hidden;
+  .addButtonSvg {
+    fill: #70a57450;
+  }
+  &:hover {
+    .addButtonSvg {
+      fill: #70a574;
+      transform: scale(110%);
+      transition: all 0.15s ease-in-out;
+    }
+  }
+  &:active {
+    .addButtonSvg {
+      fill: #59815c;
+    }
+  }
+  &:disabled {
+    .addButtonSvg {
+      fill: #be5151;
+      opacity: 0.4;
+    }
+  }
+}
+.addressExample,
+.currentPosition {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+  color: #c2c2c2;
+  span {
+    text-decoration: underline dashed;
+    text-underline-offset: 2px;
+    cursor: pointer;
+    &:hover {
+      color: #d3d2d2;
+    }
+  }
+}
+.addressExample {
+  margin-top: 4px;
+  left: -20%;
+}
+.currentPosition {
+  margin-top: 20px;
+  left: -23%;
+}
+
+@media screen and (min-width: 767px) and (max-width: 999px) {
+  .inputField {
+    height: 30px;
+    border-radius: 8px;
+    padding: 0 30px 0 10px;
+    font-size: 20px;
+    &::placeholder {
+      font-size: 20px;
+    }
+  }
+  .addButtonBlock {
+    width: 28px;
+    height: 28px;
+    top: 0;
+  }
+  .addressExample,
+  .currentPosition {
+    font-size: 10px;
+  }
+  .addressExample {
+    margin-top: 4px;
+    left: -17%;
+  }
+  .currentPosition {
+    margin-top: 20px;
+    left: -20%;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 766px) {
+  .inputField {
+    font-size: 16px;
+    padding: 0 34px 0 10px;
+    &::placeholder {
+      font-size: 16px;
+    }
+  }
+  .addButtonBlock {
+    width: 28px;
+    height: 28px;
+    top: 14%;
+    right: 4px;
+  }
+  .addressExample,
+  .currentPosition {
+    font-size: 10px;
+    line-height: 10px;
+    top: 90%;
+  }
+  .addressExample {
+    margin-top: 6px;
+    left: -18%;
+  }
+  .currentPosition {
+    margin-top: 18px;
+    left: -21%;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .inputField {
+    font-size: 16px;
+    height: 30px;
+    padding: 0 34px 0 10px;
+    &::placeholder {
+      font-size: 16px;
+    }
+  }
+  .addButtonBlock {
+    width: 24px;
+    height: 24px;
+    top: 10%;
+    right: 4px;
+  }
+  .addressExample,
+  .currentPosition {
+    font-size: 10px;
+    line-height: 10px;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .addressExample {
+    margin-top: 6px;
+  }
+  .currentPosition {
+    margin-top: 18px;
+  }
+}

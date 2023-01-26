@@ -1,0 +1,29 @@
+.addressesBox {
+  width: 100%;
+  height: 100%;
+  background-color: #50655e;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+@media screen and (min-width: 767px) and (max-width: 999px) {
+  .addressesBox {
+    width: 100%;
+    padding: 10px 20px;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 766px) {
+  .addressesBox {
+    height: 40%;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .addressesBox {
+    width: 100vw;
+    height: 40%;
+    padding: 5px 10px;
+  }
+}

@@ -1,0 +1,78 @@
+.errorBlock {
+  width: 100%;
+  min-height: 40px;
+  border-radius: 10px;
+  border: 2px solid rgb(190, 81, 81);
+  background-color: #c2c2c2;
+  font-size: 14px;
+  padding: 0 40px 0 10px;
+  overflow: scroll;
+  p {
+    width: 350px;
+    word-wrap: break-word;
+    span {
+      color: #be5151;
+    }
+  }
+
+  .retryBtn {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    .retryImg {
+      width: 28px;
+      height: 28px;
+    }
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 999px) {
+  .errorBlock {
+    width: 350px;
+    margin: 0 auto;
+    overflow: visible;
+    p {
+      width: 350px;
+      word-wrap: break-word;
+      padding-right: 50px;
+      span {
+        color: #be5151;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 766px) {
+  .errorBlock {
+    p {
+      width: 300px;
+      word-wrap: break-word;
+      span {
+        color: #be5151;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .errorBlock {
+    font-size: 14px;
+    p {
+      width: 254px;
+      word-wrap: break-word;
+      background-color: #be5151;
+      span {
+        color: #be5151;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.mapbox {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (min-width: 375px) and (max-width: 766px) {
+  .mapbox {
+    height: 60%;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .mapbox {
+    height: 60%;
+  }
+}
